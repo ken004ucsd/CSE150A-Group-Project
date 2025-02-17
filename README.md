@@ -1,7 +1,5 @@
 # CSE150A-Group-Project
 
-# CSE150A-Group-Project
-
 IMDB Sentiment Classification Using Naïve Bayes
 ==============================================
 
