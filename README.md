@@ -70,4 +70,12 @@ Our sentiment analysis model performs well, achieving approximately 88% accuracy
 
 So far, we have only worked on the first feature predicting sentiment from text reviews. However, we need to develop the second feature, which involves analyzing review ratings to enhance sentiment classification. Incorporating numerical ratings can provide additional context and improve sentiment predictions, especially for ambiguous or mixed reviews.
 
-To improve the model, we could explore word embeddings such as Word2Vec or BERT, which capture semantic relationships between words. Deep learning approaches like LSTMs or Transformers could further enhance sentiment detection by considering sequential dependencies. Additionally, hyperparameter tuning—such as optimizing the smoothing factors in Naïve Bayes—could refine classification accuracy. Expanding preprocessing techniques by incorporating lemmatization, bigrams, and sentiment-aware features may also improve performance.
+For our next submission, we plan to enhance the model by experimenting with n-gram models (bigrams, trigrams) to capture contextual word relationships and improve sentiment classification. Additionally, we will explore Logistic Regression or Neural Networks for better generalization, as they can provide more nuanced decision boundaries compared to Naïve Bayes. To further refine performance, we will incorporate word embeddings such as Word2Vec and optimize TF-IDF vectorization to improve feature representation. These enhancements aim to create a more robust and accurate sentiment analysis model capable of handling complex language patterns in reviews.
+
+
+
+
+
+
+
+
