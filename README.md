@@ -8,6 +8,10 @@ Authors:
 - Kenny Nguyen
 - Yuliana Chavez
 
+Link To Notebook
+![Notebook Preview](https://img.shields.io/badge/View%20Notebook-blue)
+[Link to Jupyter Notebook](https://github.com/ken004ucsd/CSE150A-Group_Project/blob/milestone2/milestone2.ipynb)
+
 PEAS Analysis
 =============
 
