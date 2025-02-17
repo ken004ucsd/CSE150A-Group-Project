@@ -9,7 +9,7 @@ Authors:
 - Yuliana Chavez
 
 Link To Notebook
-[Link to Jupyter Notebook](https://github.com/ken004ucsd/CSE150A-Group_Project/blob/milestone2/Milestone2.ipynb)
+[Link to Jupyter Notebook](https://github.com/ken004ucsd/CSE150A-Group-Project/blob/milestone2/Milestone2.ipynb)
 
 PEAS Analysis
 =============
