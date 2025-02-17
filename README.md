@@ -58,27 +58,6 @@ Dataset:
 - Source: IMDB movie reviews dataset.
 - Size: 50,000 labeled reviews.
 
-Setup Instructions:
-1. Install dependencies:
-pip install pandas scikit-learn numpy
-
-markdown
-Copy
-Edit
-2. Clone the repository:
-git clone <repo-link> cd <repo-folder>
-
-markdown
-Copy
-Edit
-3. Run `train.py` to train the model:
-python train.py
-
-markdown
-Copy
-Edit
-4. Run `predict.py` to test on new reviews.
-
 Model Performance:
 | Metric        | Score  |
 |--------------|--------|
