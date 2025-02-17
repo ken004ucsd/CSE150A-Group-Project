@@ -65,9 +65,9 @@ Model Performance:
 | Precision    | 87.9%  |
 | Recall       | 88.1%  |
 
-Conclusion
+Conclusion: 
 Our sentiment analysis model performs well, achieving approximately 88% accuracy using the Naïve Bayes classifier. It is computationally efficient, making it suitable for large datasets, and effectively handles text preprocessing using TF-IDF vectorization. However, the model has some limitations, particularly due to the assumption of word independence, which can result in loss of meaning and context. Additionally, it struggles with word order, making it less effective at detecting sarcasm or negation in reviews.
 
-To improve the model, we could explore word embeddings such as Word2Vec or BERT, which capture semantic relationships between words. Deep learning approaches like LSTMs or Transformers could further enhance sentiment detection by considering sequential dependencies. Additionally, hyperparameter tuning—such as optimizing the smoothing factors in Naïve Bayes—could refine classification accuracy. Expanding preprocessing techniques by incorporating lemmatization, bigrams, and sentiment-aware features may also improve performance.
+So far, we have only worked on the first feature—predicting sentiment from text reviews. However, we need to develop the second feature, which involves analyzing review ratings to enhance sentiment classification. Incorporating numerical ratings can provide additional context and improve sentiment predictions, especially for ambiguous or mixed reviews.
 
-For the next steps, we plan to implement logistic regression or a random forest classifier for comparison. We also aim to integrate pre-trained embeddings like GloVe or FastText to enhance feature representation. Lastly, a detailed analysis of misclassified cases will help identify weaknesses and refine the model for better performance.
+To improve the model, we could explore word embeddings such as Word2Vec or BERT, which capture semantic relationships between words. Deep learning approaches like LSTMs or Transformers could further enhance sentiment detection by considering sequential dependencies. Additionally, hyperparameter tuning—such as optimizing the smoothing factors in Naïve Bayes—could refine classification accuracy. Expanding preprocessing techniques by incorporating lemmatization, bigrams, and sentiment-aware features may also improve performance.
