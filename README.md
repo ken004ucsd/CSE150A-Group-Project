@@ -65,23 +65,9 @@ Model Performance:
 | Precision    | 87.9%  |
 | Recall       | 88.1%  |
 
-Conclusion:
-- **Strengths**:
-- Performs well (~88% accuracy) using Naïve Bayes.
-- Fast training time, efficient for large datasets.
-- Handles text preprocessing well using TF-IDF.
+Conclusion
+Our sentiment analysis model performs well, achieving approximately 88% accuracy using the Naïve Bayes classifier. It is computationally efficient, making it suitable for large datasets, and effectively handles text preprocessing using TF-IDF vectorization. However, the model has some limitations, particularly due to the assumption of word independence, which can result in loss of meaning and context. Additionally, it struggles with word order, making it less effective at detecting sarcasm or negation in reviews.
 
-- **Limitations**:
-- Assumes word independence (may not capture meaning/context well).
-- Vulnerable to word order loss (doesn’t detect sarcasm or negation well).
+To improve the model, we could explore word embeddings such as Word2Vec or BERT, which capture semantic relationships between words. Deep learning approaches like LSTMs or Transformers could further enhance sentiment detection by considering sequential dependencies. Additionally, hyperparameter tuning—such as optimizing the smoothing factors in Naïve Bayes—could refine classification accuracy. Expanding preprocessing techniques by incorporating lemmatization, bigrams, and sentiment-aware features may also improve performance.
 
-- **Potential Improvements**:
-- Use Word Embeddings (e.g., Word2Vec, BERT) for better word relationships.
-- Try Deep Learning (LSTMs or Transformers).
-- Hyperparameter tuning (optimize smoothing factors in Naïve Bayes).
-- Expand preprocessing (lemmatization, bigrams, sentiment-aware techniques).
-
-Next Steps:
-- Implement logistic regression or random forest for comparison.
-- Introduce pretrained embeddings (e.g., GloVe, FastText).
-- Analyze error cases where the model fails.
+For the next steps, we plan to implement logistic regression or a random forest classifier for comparison. We also aim to integrate pre-trained embeddings like GloVe or FastText to enhance feature representation. Lastly, a detailed analysis of misclassified cases will help identify weaknesses and refine the model for better performance.
