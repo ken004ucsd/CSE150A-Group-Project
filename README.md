@@ -24,10 +24,9 @@ UPDATE:
     $$
 
 2. Prediction Phase:
-   $$
-   P(C) = \frac{\text{count of class } C}{\text{total samples}}
-   $$
-     
+
+     <img width="293" alt="Screenshot 2025-03-02 at 7 46 48 PM" src="https://github.com/user-attachments/assets/afddea42-421b-4020-b3f1-0772f5617596" />
+
 
 
 
