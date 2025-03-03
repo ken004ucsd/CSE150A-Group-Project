@@ -13,6 +13,8 @@ Authors:
 UPDATE:
 =============
 
+Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
+
 1. Training Phase:
    In the Training Phase, the model processes labeled text data by tokenizing documents into words, counting word frequencies per class, and estimating probabilities using Conditional Probability Tables (CPTs) to determine word likelihoods within each class. These probabilities form the basis for future predictions.
 
@@ -24,11 +26,6 @@ UPDATE:
    In the Prediction Phase, the model processes a new document to determine the most likely class. The first step involves feature extraction, where the model identifies and records word  occurrences within the document. Next, the model computes the posterior probability for each class using Bayes' Theorem.
 
      <img width="293" alt="Screenshot 2025-03-02 at 7 46 48 PM" src="https://github.com/user-attachments/assets/afddea42-421b-4020-b3f1-0772f5617596" />
-
-
-
-
-Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
 
 The classifier calculates conditional probabilities for each word given a sentiment (positive or negative). It assumes that the probability of a review's sentiment is the product of the probabilities of individual words appearing in that review. This simplifies text classification and means the model does not account for word order.
 
