@@ -23,6 +23,11 @@ UPDATE:
     P(w|C) = \frac{\text{count}(w, C) + \alpha}{\sum_{\text{all } w'} (\text{count}(w', C) + \alpha)}
     $$
 
+- The **class prior** \( P(C) \) is also computed as:
+
+    $$
+    P(C) = \frac{\text{count of class } C}{\text{total samples}}
+    $$
 
 Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
 
