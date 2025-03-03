@@ -22,9 +22,6 @@ UPDATE:
     $$
     P(w|C) = \frac{\text{count}(w, C) + \alpha}{\sum_{\text{all } w'} (\text{count}(w', C) + \alpha)}
     $$
-
-    where \(\alpha\) is a smoothing factor (Laplace smoothing).
-
 Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
 
 The classifier calculates conditional probabilities for each word given a sentiment (positive or negative). It assumes that the probability of a review's sentiment is the product of the probabilities of individual words appearing in that review. This simplifies text classification and means the model does not account for word order.
