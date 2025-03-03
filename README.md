@@ -12,8 +12,6 @@ Authors:
 
 UPDATE:
 =============
-
-## 1. Training Phase
 - Given a dataset with text documents and labels (e.g., spam or not spam), the model:
   1. **Tokenizes** text into words (features).
   2. **Counts word frequencies** per class.
