@@ -14,18 +14,14 @@ UPDATE:
 =============
 
 1. Training Phase:
-- Given a dataset with text documents and labels (e.g., spam or not spam), the model:
-  1. **Tokenizes** text into words (features).
-  2. **Counts word frequencies** per class.
-  3. **Estimates probabilities** using **Conditional Probability Tables (CPTs):**
+   In the Training Phase, the model processes labeled text data by tokenizing documents into words, counting word frequencies per class, and estimating probabilities using Conditional Probability Tables (CPTs) to determine word likelihoods within each class. These probabilities form the basis for future predictions.
 
     $$
     P(w|C) = \frac{\text{count}(w, C) + \alpha}{\sum_{\text{all } w'} (\text{count}(w', C) + \alpha)}
     $$
 
-2. Prediction Phase:
-   In the Prediction Phase, the model processes a new document to determine the most likely class. The first step involves feature extraction, where the model identifies and records word     
-   occurrences within the document. Next, the model computes the posterior probability for each class using Bayes' Theorem.
+3. Prediction Phase:
+   In the Prediction Phase, the model processes a new document to determine the most likely class. The first step involves feature extraction, where the model identifies and records word  occurrences within the document. Next, the model computes the posterior probability for each class using Bayes' Theorem.
 
      <img width="293" alt="Screenshot 2025-03-02 at 7 46 48 PM" src="https://github.com/user-attachments/assets/afddea42-421b-4020-b3f1-0772f5617596" />
 
