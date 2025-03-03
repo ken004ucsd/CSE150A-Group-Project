@@ -10,6 +10,23 @@ Authors:
 
 [Link to Jupyter Notebook](https://github.com/ken004ucsd/CSE150A-Group-Project/blob/milestone2/Milestone2.ipynb)
 
+UPDATE:
+=============
+
+Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
+
+The classifier calculates conditional probabilities for each word given a sentiment (positive or negative). It assumes that the probability of a review's sentiment is the product of the probabilities of individual words appearing in that review. This simplifies text classification and means the model does not account for word order.
+
+For training, the dataset consists of IMDB movie reviews labeled as positive or negative. The input features are text reviews, and the target variable is sentiment (1 for positive, 0 for negative). Preprocessing includes removing stopwords and applying TF-IDF vectorization.
+
+Our units are vectorized using TF-IDF. TF-IDF converts text into numerical features by assigning weights to words based on their importance. Term frequency (TF) measures how often a word appears in a document, while inverse document frequency (IDF) reduces the weight of common words that appear in many documents. This ensures that words more relevant to sentiment classification have higher weights.
+
+Our preprocessing process converts all text to lowercase (lowercase=True) to ensure consistency. We remove English stop words (stop_words='english') to eliminate common words that do not provide meaningful contributions. Additionally, we apply a regex pattern (token_pattern=r'[a-zA-Z]{2,}') to extract words with at least two letters, effectively ignoring numbers and single-character tokens.
+
+For feature extraction, we use fit_transform(X_train), which learns a vocabulary from X_train, computes TF-IDF scores for words, and converts X_train into a sparse matrix where each row represents a document and each column corresponds to a word’s TF-IDF score. Next, we apply transform(X_test), which uses the same vocabulary from X_train to transform X_test into TF-IDF feature vectors. Our X_train_tfidf and X_test_tfidf are now numerical feature matrices, where each row represents a document and each column corresponds to a word from the learned vocabulary with its TF-IDF weight.
+
+During training, the model learns word probability distributions for each sentiment. When predicting sentiment, it calculates the probability of a review belonging to each class and assigns the one with the highest probability.
+
 PEAS Analysis
 =============
 
