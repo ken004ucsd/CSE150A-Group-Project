@@ -12,6 +12,8 @@ Authors:
 
 UPDATE:
 =============
+
+1. Training Phase:
 - Given a dataset with text documents and labels (e.g., spam or not spam), the model:
   1. **Tokenizes** text into words (features).
   2. **Counts word frequencies** per class.
@@ -20,6 +22,12 @@ UPDATE:
     $$
     P(w|C) = \frac{\text{count}(w, C) + \alpha}{\sum_{\text{all } w'} (\text{count}(w', C) + \alpha)}
     $$
+
+2. Prediction Phase:
+   $$
+   P(C) = \frac{\text{count of class } C}{\text{total samples}}
+   $$
+     
 
 
 
