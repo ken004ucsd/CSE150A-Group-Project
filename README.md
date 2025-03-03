@@ -24,6 +24,8 @@ UPDATE:
     $$
 
 2. Prediction Phase:
+   In the Prediction Phase, the model processes a new document to determine the most likely class. The first step involves feature extraction, where the model identifies and records word     
+   occurrences within the document. Next, the model computes the posterior probability for each class using Bayes' Theorem.
 
      <img width="293" alt="Screenshot 2025-03-02 at 7 46 48 PM" src="https://github.com/user-attachments/assets/afddea42-421b-4020-b3f1-0772f5617596" />
 
