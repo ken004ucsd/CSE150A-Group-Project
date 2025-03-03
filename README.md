@@ -12,7 +12,6 @@ Authors:
 
 UPDATE:
 =============
-# Naive Bayes Classifier
 
 ## 1. Training Phase
 - Given a dataset with text documents and labels (e.g., spam or not spam), the model:
@@ -25,24 +24,6 @@ UPDATE:
     $$
 
     where \(\alpha\) is a smoothing factor (Laplace smoothing).
-
-- The **class prior** \( P(C) \) is also computed as:
-
-    $$
-    P(C) = \frac{\text{count of class } C}{\text{total samples}}
-    $$
-
-## 2. Prediction Phase
-- For a new document, the model:
-  1. **Extracts features** (word occurrences).
-  2. **Computes the posterior probability** using **Bayes' Theorem**:
-
-    $$
-    P(C|w_1, w_2, ..., w_n) \propto P(C) \prod_{i=1}^{n} P(w_i|C)
-    $$
-
-  3. **Selects the class** \( C \) with the highest probability.
-
 
 Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
 
