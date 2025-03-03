@@ -12,8 +12,36 @@ Authors:
 
 UPDATE:
 =============
+# Naive Bayes Classifier
 
-![Equation](https://latex.codecogs.com/png.latex?P(w|C)%20=%20\frac{count(w,%20C)%20+%20\alpha}{\sum_{all%20w'}%20(count(w',%20C)%20+%20\alpha)})
+## 1. Training Phase
+- Given a dataset with text documents and labels (e.g., spam or not spam), the model:
+  1. **Tokenizes** text into words (features).
+  2. **Counts word frequencies** per class.
+  3. **Estimates probabilities** using **Conditional Probability Tables (CPTs):**
+
+    $$
+    P(w|C) = \frac{\text{count}(w, C) + \alpha}{\sum_{\text{all } w'} (\text{count}(w', C) + \alpha)}
+    $$
+
+    where \(\alpha\) is a smoothing factor (Laplace smoothing).
+
+- The **class prior** \( P(C) \) is also computed as:
+
+    $$
+    P(C) = \frac{\text{count of class } C}{\text{total samples}}
+    $$
+
+## 2. Prediction Phase
+- For a new document, the model:
+  1. **Extracts features** (word occurrences).
+  2. **Computes the posterior probability** using **Bayes' Theorem**:
+
+    $$
+    P(C|w_1, w_2, ..., w_n) \propto P(C) \prod_{i=1}^{n} P(w_i|C)
+    $$
+
+  3. **Selects the class** \( C \) with the highest probability.
 
 
 Multinomial Naïve Bayes is a probabilistic model used for text classification. It assumes that words in a document are conditionally independent given the sentiment and calculates the probability of a document belonging to a class based on word frequencies. The model estimates these probabilities using training data and applies Laplace smoothing to handle unseen words.
