@@ -1,6 +1,5 @@
 # Diabetes Prediction Agent Analysis
 
-==============================================
 
 Authors:
 - Noah Danan
