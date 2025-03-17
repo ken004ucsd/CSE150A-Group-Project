@@ -267,4 +267,6 @@ The model's predictions on sample patients also demonstrate reasonable behavior:
 
 All code implementation and analysis was performed using Python libraries including pandas, numpy, scikit-learn, matplotlib, and seaborn, as shown in the provided code.
 
+We implemented generative AI to assist in formulating portions of the README.md documentation and aggregating results data for efficient analysis and interpretation. Additionally, we utilized these technologies to generate synthetic datasets for testing purposes.
+
 Dataset source: Pima Indians Diabetes Database from Kaggle (https://www.kaggle.com/datasets/mathchi/diabetes-data-set/data)
