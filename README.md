@@ -65,6 +65,8 @@ The dataset initially appeared to have no missing values, but domain knowledge s
 
 ### Variable Interactions and Model Structure
 
+![Correlation Matrix](confusion_matrix.png)
+
 The correlation matrix reveals several important relationships:
 
 1. **Glucose and Outcome** (0.47): The strongest predictor of diabetes, which aligns with medical knowledge that elevated blood glucose is a primary indicator of diabetes.
