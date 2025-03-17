@@ -65,6 +65,8 @@ The dataset initially appeared to have no missing values, but domain knowledge s
 
 ### Variable Interactions and Model Structure
 
+![Correlation Matrix](correlation_matrix.png)
+
 The correlation matrix reveals several important relationships:
 
 1. **Glucose and Outcome** (0.47): The strongest predictor of diabetes, which aligns with medical knowledge that elevated blood glucose is a primary indicator of diabetes.
@@ -204,7 +206,7 @@ The logistic regression model achieved the following performance metrics:
 
 ### Interpretation of Results
 
-![Correlation Matrix](confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.png)
 
 The confusion matrix shows:
 - True Negatives: 82
