@@ -1,5 +1,14 @@
 # Diabetes Prediction Agent Analysis
 
+==============================================
+
+Authors:
+- Noah Danan
+- Kenny Nguyen
+- Yuliana Chavez
+
+[Link to Jupyter Notebook](https://github.com/ken004ucsd/CSE150A-Group-Project/blob/milestone3/Milestone3.ipynb)
+
 ## PEAS/Agent Analysis (5pts)
 
 ### PEAS Framework
