@@ -222,6 +222,8 @@ These results indicate that:
 
 4. **Baseline comparison**: Random guessing would achieve approximately 65% accuracy for always predicting the majority class (no diabetes). Our model's 75% accuracy represents a 10 percentage point improvement over this baseline.
 
+![Feature Importance](feature_importance.png)
+
 The feature importance analysis reveals that Glucose is by far the most influential predictor, followed by BMI and Age. This aligns with medical knowledge that elevated blood glucose levels are the primary indicator of diabetes, while BMI and age are known risk factors.
 
 The model's predictions on sample patients also demonstrate reasonable behavior:
