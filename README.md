@@ -8,7 +8,7 @@ Authors:
 - Kenny Nguyen
 - Yuliana Chavez
 
-PEAS Analysis
+PART 1 . PEAS Analysis
 =============
 
 Performance Measure (P)
@@ -44,12 +44,37 @@ The agent fits into **probabilistic modeling** via:
 - **Laplace Smoothing**: Handles unseen words in test data. ( FILL THIS OUT LATER ONCE YOU HAVE YOUR MODEL)
 
 
-Data Exploration
+PART 2. Data Exploration
 =============
 
+Dataset
+-----------------------
+- The dataset we are using is the Kaggle Diabete's dataset (https://www.kaggle.com/datasets/mathchi/diabetes-data-set/data). This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases.
 
+It is important to note that all patients here are females at least 21 years old of Pima Indian heritage.
 
+The relevant varibles to highlight in this dataset are: 
 
+Pregnancies: Number of times pregnant
+Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+BloodPressure: Diastolic blood pressure (mm Hg)
+SkinThickness: Triceps skin fold thickness (mm)
+Insulin: 2-Hour serum insulin (mu U/ml)
+BMI: Body mass index (weight in kg/(height in m)^2)
+DiabetesPedigreeFunction: Diabetes pedigree function
+Age: Age (years)
+Outcome: Class variable (0 or 1)
+
+All of these are relevant medical predictors that contribute to a patients risk factor in developing diabetes in life.
+The key features to predict diabetes are typically those related to glucose levels, insulin, BMI, age, and blood pressure. However, all features should be considered as they may have some impact on the prediction:
+
+Glucose: High glucose levels are strongly correlated with diabetes.
+BMI: Being overweight or obese (higher BMI) is a significant risk factor.
+Age: Older individuals are more likely to develop diabetes.
+BloodPressure: High blood pressure often accompanies diabetes.
+Insulin: Higher insulin levels are associated with diabetes.
+Pregnancies and SkinThickness: These may have secondary effects but can still contribute useful information about a patient’s overall health.
+The Outcome column is the target variable we are trying to predict.
 
 
 
