@@ -1,6 +1,6 @@
 # CSE150A-Group-Project
 
-IMDB Sentiment Classification Using Naïve Bayes
+Predicting Diabetes Outcome Using (FILL THIS OUT LATER ONCE YOU HAVE YOUR MODEL)
 ==============================================
 
 Authors:
@@ -15,23 +15,21 @@ Performance Measure (P)
 -----------------------
 Our AI agent is evaluated based on:
 
-- **Accuracy**: How well it classifies movie reviews as "positive" or "negative."
-- **Precision & Recall**: Ensuring it does not over-classify positive reviews when they're actually negative.
+- **Accuracy**: How well it evaluates whether a patient will tend to develop a positive case (1) or negative case (0) for diabetes later in life.
+- **Precision (Positive Predictive Value)**: Precision measures the proportion of true positive predictions (correctly identified cases of diabetes) out of all the predicted positive cases (both true positives and false positives). In other words, it answers the question: "Of all the patients predicted to have diabetes, how many actually have it?"
 - **Computational Efficiency**: The model should be efficient in training and inference.
 
 Environment (E)
 ---------------
-The model operates in a **supervised learning environment**, using labeled IMDB movie reviews. Each review is categorized as either **positive (1)** or **negative (0).**
+The model operates in a **supervised learning environment**, the system will interact with a dataset that contains medical and lifestyle factors (e.g., age, BMI, glucose levels) and the outcome (whether the patient has diabetes or not). Each patient is categorized as either **positive (1)** or **negative (0).**
 
 Actuators (A)
 -------------
-The agent’s primary actuator is **predicting** the sentiment of a given review.
+The agent’s primary actuator is **predicting** the positive or negative risk factor for a patient to develop diabetes based on their medical and demographic features.
 
 Sensors (S)
 -----------
-- The model **receives** input text reviews.
-- **Processes** text using the `TfidfVectorizer` (to extract relevant features).
-- Uses `MultinomialNB` for classification.
+- The model **receives** inputs on medical and personal attributes.
 
 Agent Type
 ----------
@@ -43,34 +41,15 @@ The agent fits into **probabilistic modeling** via:
 
 - **Naïve Bayes classifier**: Uses **Bayes’ Theorem** with the assumption that words in a review are independent.
 - **TF-IDF**: Weights words based on their frequency across all reviews.
-- **Laplace Smoothing**: Handles unseen words in test data.
+- **Laplace Smoothing**: Handles unseen words in test data. ( FILL THIS OUT LATER ONCE YOU HAVE YOUR MODEL)
+
+
+Data Exploration
+=============
 
 
 
 
-
-
-
-Project Overview:
-This project classifies IMDB movie reviews as positive or negative using Naïve Bayes with TF-IDF text vectorization.
-
-Dataset:
-- Source: IMDB movie reviews dataset.
-- Size: 50,000 labeled reviews.
-
-Model Performance:
-| Metric        | Score  |
-|--------------|--------|
-| Accuracy     | 88.5%  |
-| Precision    | 87.9%  |
-| Recall       | 88.1%  |
-
-Conclusion: 
-Our sentiment analysis model performs well, achieving approximately 88% accuracy using the Naïve Bayes classifier. It is computationally efficient, making it suitable for large datasets, and effectively handles text preprocessing using TF-IDF vectorization. However, the model has some limitations, particularly due to the assumption of word independence, which can result in loss of meaning and context. Additionally, it struggles with word order, making it less effective at detecting sarcasm or negation in reviews.
-
-So far, we have only worked on the first feature predicting sentiment from text reviews. However, we need to develop the second feature, which involves analyzing review ratings to enhance sentiment classification. Incorporating numerical ratings can provide additional context and improve sentiment predictions, especially for ambiguous or mixed reviews.
-
-For our next submission, we plan to enhance the model by experimenting with n-gram models (bigrams, trigrams) to capture contextual word relationships and improve sentiment classification. Additionally, we will explore Logistic Regression or Neural Networks for better generalization, as they can provide more nuanced decision boundaries compared to Naïve Bayes. To further refine performance, we will incorporate word embeddings such as Word2Vec and optimize TF-IDF vectorization to improve feature representation. These enhancements aim to create a more robust and accurate sentiment analysis model capable of handling complex language patterns in reviews.
 
 
 
